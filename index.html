@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malla Interactiva - Lic. en Criminalística</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f8fa;
+      color: #333;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+      color: #2b6777;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 2rem;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background: #2b6777;
+      color: white;
+    }
+    tr.tachado td {
+      text-decoration: line-through;
+      color: #999;
+    }
+    input[type="text"] {
+      width: 60px;
+      padding: 4px;
+    }
+    .checkbox {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+  <h1>Malla Interactiva - Lic. en Criminalística</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Materia</th>
+        <th>¿Cursada?</th>
+        <th>Nota</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Sociología y conocimiento científico</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Criminalística</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Física aplicada a la criminalística</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Derecho constitucional y derechos humanos</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Matemática</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Elementos de derecho penal y contravencional</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Elementos de derecho procesal penal y contravencional</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Inglés I</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Criminología y victimología</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Química aplicada a la criminalística</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Documentología I</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Inglés II</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Identidad humana</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Genética forense</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Análisis matemático</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Dibujo y planimetría pericial</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Balística I</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Documentología II</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Caligrafía</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Medicina legal y forense</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Ética profesional</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Informática forense</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Balística II</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Química y toxicología forense</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Papiloscopía</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Psicología general y psicopatología forense</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Taller integrador de prácticas en criminalística</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Fotografía y representaciones periciales</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Estadística</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Documentología y técnicas avanzadas de verificación</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Pericias criminalísticas</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Estudio criminalístico de la escena del crimen I</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Accidentología vial</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Balística aplicada</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Psiquiatría forense</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Tecnologías en la investigación criminalística</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Metodología de la investigación aplicada a la criminalística</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Investigación de incendios, explosiones y otros siniestros</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Estudio criminalístico de la escena del crimen II</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Gestión de recursos humanos</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+      <tr>
+        <td>Trabajo integrador final</td>
+        <td><input type="checkbox" class="checkbox" onchange="tachar(this)"></td>
+        <td><input type="text" placeholder="--"></td>
+      </tr>
+    </tbody>
+  </table>
+  <script>
+    function tachar(checkbox) {
+      const fila = checkbox.closest('tr');
+      if (checkbox.checked) {
+        fila.classList.add('tachado');
+      } else {
+        fila.classList.remove('tachado');
+      }
+    }
+  </script>
+</body>
+</html>
